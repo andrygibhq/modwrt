@@ -1,7 +1,7 @@
 #!/bin/bash
-wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/datetime-sync /usr/bin && chmod +x /usr/bin/datetime-sync
-wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/freecron /usr/bin && chmod +x /usr/bin/freecron
-wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/neofetch /usr/bin && chmod +x /usr/bin/neofetch
-wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/speedtest /usr/bin && chmod +x /usr/bin/speedtest
-wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/sysinfo /usr/bin && chmod +x /usr/bin/sysinfo
-wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/profile /etc && chmod 0644 /etc/profile
+wget -O /usr/bin/datetime-sync https://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/datetime-sync && chmod +x /usr/bin/datetime-sync
+wget -O /usr/bin/freecron https://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/freecron && chmod +x /usr/bin/freecron
+wget -O /usr/bin/neofetch https://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/neofetch && chmod +x /usr/bin/neofetch
+wget -O /usr/bin/speedtest https://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/speedtest && chmod +x /usr/bin/speedtest
+wget -O /usr/bin/sysinfo https://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/sysinfo && chmod +x /usr/bin/sysinfo
+wget -O /etc/profile https://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/profile && chmod 0644 /etc/profile
