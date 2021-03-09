@@ -1,1 +1,7 @@
-wget -O /usr/bin/uhttpd https://raw.githubusercontent.com/andrygibhq/modwrt/new/main/
+#!/bin/bash
+wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/datetime-sync /usr/bin && chmod +x /usr/bin/datetime-sync
+wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/freecron /usr/bin && chmod +x /usr/bin/freecron
+wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/neofetch /usr/bin && chmod +x /usr/bin/neofetch
+wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/speedtest /usr/bin && chmod +x /usr/bin/speedtest
+wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/sysinfo /usr/bin && chmod +x /usr/bin/sysinfo
+wget --no-check-certificate hhttps://raw.githubusercontent.com/andrygibhq/modwrt/raw/main/profile /etc && chmod 0644 /etc/profile
