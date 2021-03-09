@@ -1,2 +1,2 @@
 #!/bin/bash
-wget --no-check-certificate https://github.com/tbscrew/Openwrt-Tunnel/raw/master/datetime-sync /usr/bin && chmod +x /usr/bin/datetime-sync
+wget --no-check-certificate https://github.com/andrygibhq/modwrt/raw/main/datetime-sync /usr/bin && chmod +x /usr/bin/datetime-sync
