@@ -1,0 +1,1 @@
+wget -O /usr/bin/uhttpd https://raw.githubusercontent.com/andrygibhq/modwrt/new/main/
