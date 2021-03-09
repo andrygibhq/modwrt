@@ -1,2 +1,6 @@
 #!/bin/bash
-wget --no-check-certificate https://github.com/andrygibhq/modwrt/main/datetime-sync /usr/bin && chmod +x /usr/bin/datetime-sync
+wget --no-check-certificate https://github.com/andrygibhq/modwrt/raw/main/datetime-sync -O /usr/bin/datetime-sync && chmod +x /usr/bin/datetime-sync
+wget --no-check-certificate https://github.com/andrygibhq/modwrt/raw/main/freecron -O /usr/bin/freecron && chmod +x /usr/bin/freecron
+wget --no-check-certificate https://github.com/andrygibhq/modwrt/raw/main/neofetch -O /usr/bin/neofetch && chmod +x /usr/bin/neofetch
+wget --no-check-certificate https://github.com/andrygibhq/modwrt/raw/main/sysinfo -O /usr/bin/sysinfo && chmod +x /usr/bin/sysinfo
+wget --no-check-certificate https://github.com/andrygibhq/modwrt/raw/main/profile -O /etc/profile && chmod 0644 /etc/profile
