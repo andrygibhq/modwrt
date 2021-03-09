@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+
+# Linux HTTP date & time sync
+# author  : Lutfa Ilham
+# version : v1.1
+
+import datetime
+import os
+import requests
+import sys
+import time
+
+access_token = 'ajGJzViNqzyFpDhRBmVP'
+time_zone = 'Asia/Jakarta'
+
+
+def set_datetime():
+    res = requests.get(
+        'https://timezoneapi.io/api/timezone/?{}&token={}'.format(
+            time_zone, access_token)).json()
+    if int(res['meta']['code']) == 200:
+        now = res['data']['datetime']['date_time_ymd']
+        now_datetime = datetime.datetime.fromisoformat(now)
+        os.system("date -s '{}-{}-{} {}:{}:{}'".format(
+            now_datetime.year, now_datetime.month, now_datetime.day,
+            now_datetime.hour, now_datetime.minute, now_datetime.second))
+        return True
+    return False
+
+
+def main_loop():
+    while True:
+        try:
+            if set_datetime():
+                print('Date and time synchronized successfully!')
+                break
+            print('Failed to get response from server!')
+        except Exception as e:
+            print('Error: {}'.format(e))
+        print('Retrying fetch date and time ...')
+        time.sleep(60)
+    sys.exit()
+
+
+if __name__ == '__main__':
+    main_loop()

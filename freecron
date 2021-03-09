@@ -1,0 +1,6 @@
+#!/bin/bash
+while true
+do
+ /root/free.sh
+ sleep 120
+done
